@@ -10,14 +10,14 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   const navItems = [
-    { path: '/', icon: Home, label: 'Home' },
+    { path: '/home', icon: Home, label: 'Home' }, // Updated path to /home
     { path: '/history', icon: History, label: 'History' },
     { path: '/core-concepts', icon: BookOpen, label: 'Core Concepts' },
     { path: '/mutations', icon: Dna, label: 'Mutations' },
     { path: '/advanced-topics', icon: Brain, label: 'Advanced Topics' },
     { path: '/tools', icon: Tool, label: 'Tools & Techniques' },
     { path: '/resources', icon: Library, label: 'Resources' },
-    { path: '/contact', icon: Mail, label: 'Contact' }
+    { path: '/contact', icon: Mail, label: 'Contact' },
   ];
 
   return (
